@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="discussion.css">
+    <title>Course Discussion Forum</title>
+    
+</head>
+<body>
+    <h1>Course Discussion Forum</h1>
+    
+    <form id="discussion-form">
+        <input type="text" id="message" placeholder="Enter your message" />
+        <button class="btn" id="postbutton type="submit">Submit</button>
+    </form>
+    <div id="discussion-list">
+        <!-- Discussion messages will be displayed here -->
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    <script src="discussion.js"></script>
+</body>
+</html>

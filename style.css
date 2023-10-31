@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #7749F8;
+}
+
+body {
+  padding-left: 30rem;
+}
+
+section {
+  padding: 3rem 5%;
+}
+
+section:nth-child(even) {
+  background: #f6f6f6;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading span {
+  font-size: 2rem;
+  color: #7749F8;
+  text-transform: uppercase;
+}
+
+.heading h3 {
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: #263238;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1.2rem 3rem;
+  cursor: pointer;
+  color: #fff;
+  background: #263238;
+  font-size: 1.7rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: #7749F8;
+  width: 30rem;
+  height: 100%;
+  padding: 3rem;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.header .logo i {
+  color: #c6b1ff;
+}
+
+.header .navbar {
+  padding: 20% 0;
+}
+
+.header .navbar a {
+  display: block;
+  font-size: 2rem;
+  margin: 1.7rem 0;
+  color: #fff;
+}
+
+.header .navbar a i {
+  color: #cdc6df;
+  padding-right: .5rem;
+}
+
+.header .navbar a:hover {
+  color: #dfd4fc;
+}
+
+.header .navbar a:hover i {
+  padding-right: 2rem;
+}
+
+.header .share {
+  text-align: center;
+}
+
+.header .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.8rem;
+  background: #fff;
+  color: #263238;
+  margin: 0 .1rem;
+}
+
+.header .share a:hover {
+  color: #fff;
+  background: #263238;
+}
+
+.header .credit {
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
+  padding-top: 15%;
+}
+
+.header .credit span {
+  color: #e0d4ff;
+}
+
+#menu-btn {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2.5rem;
+  background: #7749F8;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  z-index: 10000;
+  display: none;
+}
+
+#menu-btn.fa-times {
+  background: #fff;
+  color: #263238;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.home .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.home .image img {
+  width: 100%;
+}
+
+.home .content {
+  width: 45rem;
+}
+
+.home .content span {
+  color: #ccbafd;
+  font-size: 2rem;
+}
+
+.home .content h3 {
+  color: #263238;
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+.home .content h3 a {
+  color: #ccb9ff;
+}
+
+
+.home .content p {
+  font-size: 1.4rem;
+  color: #777;
+  padding-bottom: 1rem;
+  line-height: 2;
+}
+
+.info-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+  }
+  
+  .info-container .box {
+    padding: 3rem;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5rem;
+    border: 0.1rem solid #999;
+  }
+  
+  .info-container .box i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    background: #7749F8;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .info-container .box h3 {
+    font-size: 2rem;
+    padding-bottom: .5rem;
+    color: #263238;
+  }
+  
+  .info-container .box p {
+    font-size: 1.5rem;
+    color: #777;
+  }
